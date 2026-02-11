@@ -141,6 +141,100 @@ h3 {
     font-weight: 600;
 }
 
+.verbal-script {
+    background: #f0f8ff;
+    border: 3px solid #4a90e2;
+    border-radius: 8px;
+    padding: 30px;
+    margin: 30px 0;
+}
+
+.verbal-script h3 {
+    color: #4a90e2;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.script-intro {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.script-content {
+    background: white;
+    padding: 25px;
+    border-radius: 6px;
+    border-left: 4px solid #4a90e2;
+}
+
+.script-line {
+    margin: 15px 0;
+    padding: 10px;
+    background: #f9f9f9;
+    border-radius: 4px;
+    line-height: 1.8;
+    color: #333;
+}
+
+.script-response {
+    margin: 10px 0 10px 30px;
+    padding: 8px 15px;
+    background: #e8f4f8;
+    border-left: 3px solid #4a90e2;
+    font-style: italic;
+    color: #555;
+}
+
+.script-note {
+    margin: 5px 0 15px 30px;
+    padding: 8px 15px;
+    background: #fff9e6;
+    border-left: 3px solid #ffc107;
+    font-size: 0.95rem;
+    color: #856404;
+}
+
+.script-footer {
+    margin-top: 20px;
+    padding: 15px;
+    background: #e8f4f8;
+    border-radius: 6px;
+    font-size: 1rem;
+}
+
+.field-note {
+    font-size: 0.9rem;
+    color: #666;
+    margin-top: 5px;
+    font-style: italic;
+}
+
+.checkbox-note {
+    font-size: 0.9rem;
+    color: #666;
+    margin: 5px 0 10px 30px;
+    font-style: italic;
+}
+
+.form-footer {
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 15px;
+    border-top: 2px solid #ddd;
+}
+
+.form-footer a {
+    color: #667eea;
+    font-weight: 600;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.form-footer a:hover {
+    text-decoration: underline;
+}
+
 .optin-form {
     max-width: 600px;
     margin: 30px auto 0;

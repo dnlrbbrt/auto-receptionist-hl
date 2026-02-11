@@ -60,57 +60,100 @@
                 <p><strong>Age Requirement:</strong> You must be 18 years or older to subscribe to SMS notifications.</p>
             </div>
 
+            <div class="verbal-script">
+                <h3>📞 Verbal Opt-In Script</h3>
+                <p class="script-intro"><strong>How We Obtain Consent:</strong> This is the exact verbal script we use when collecting SMS consent over the phone or in person:</p>
+                
+                <div class="script-content">
+                    <p class="script-line">"Thank you for your interest in Auto Receptionist HL's AI automation services. We offer SMS notifications to keep you updated about your account and our services."</p>
+                    
+                    <p class="script-line">"First, I need to confirm - are you 18 years of age or older?"</p>
+                    <p class="script-response"><em>[Wait for confirmation: "Yes"]</em></p>
+                    
+                    <p class="script-line">"Great. May I have your first and last name, please?"</p>
+                    <p class="script-response"><em>[Collect: First Name, Last Name]</em></p>
+                    
+                    <p class="script-line">"And what's the best mobile phone number to reach you?"</p>
+                    <p class="script-response"><em>[Collect: Phone Number]</em></p>
+                    
+                    <p class="script-line">"And your email address?"</p>
+                    <p class="script-response"><em>[Collect: Email Address]</em></p>
+                    
+                    <p class="script-line">"Perfect. Now, regarding text messages - we have two types of SMS notifications available:"</p>
+                    
+                    <p class="script-line"><strong>"First, transactional messages."</strong> These are important account-related messages like appointment reminders, service alerts, and account notifications from Auto Receptionist HL. Message frequency may vary. Message and data rates may apply. You can reply HELP for help or STOP to opt out at any time."</p>
+                    
+                    <p class="script-line">"Do I have your consent to send you these transactional text messages at the phone number you provided?"</p>
+                    <p class="script-response"><em>[Wait for explicit consent: "Yes" or "No"]</em></p>
+                    <p class="script-note"><strong>Note:</strong> This consent is optional. If declined, we proceed to the next option.</p>
+                    
+                    <p class="script-line"><strong>"Second, marketing and promotional messages."</strong> These include business tips, special offers, new service announcements, and promotional content from Auto Receptionist HL. Message frequency may vary. Message and data rates may apply. You can reply HELP for help or STOP to opt out at any time. This is completely optional and not required to use our services."</p>
+                    
+                    <p class="script-line">"Would you like to receive marketing and promotional text messages at the phone number you provided?"</p>
+                    <p class="script-response"><em>[Wait for explicit consent: "Yes" or "No"]</em></p>
+                    <p class="script-note"><strong>Note:</strong> This consent is optional and not required for service.</p>
+                    
+                    <p class="script-line">"Just so you know, our Privacy Policy and Terms of Service are available on our website at auto-receptionist-hl.com. Your information will not be shared with third parties except our SMS service provider. You can opt out of any messages at any time by replying STOP, and you can get help by replying HELP or calling us at (925) 550-7623."</p>
+                    
+                    <p class="script-line">"Do you have any questions about our SMS program?"</p>
+                    <p class="script-response"><em>[Answer any questions]</em></p>
+                    
+                    <p class="script-line">"Thank you! You're all set. You'll receive a confirmation message shortly if you opted in."</p>
+                </div>
+                
+                <p class="script-footer"><strong>Documentation:</strong> All verbal consents are documented with date, time, phone number, and specific consent types granted (transactional and/or marketing).</p>
+            </div>
+
             <form id="optinForm" class="optin-form">
+                <h3>Online Opt-In Form</h3>
+                
                 <div class="form-group">
-                    <label for="name">Full Name *</label>
-                    <input type="text" id="name" name="name" required>
+                    <label for="firstName">First Name *</label>
+                    <input type="text" id="firstName" name="firstName" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="lastName">Last Name *</label>
+                    <input type="text" id="lastName" name="lastName" required>
                 </div>
                 
                 <div class="form-group">
-                    <label for="phone">Phone Number *</label>
+                    <label for="phone">Phone *</label>
                     <input type="tel" id="phone" name="phone" placeholder="(555) 123-4567" required>
+                    <p class="field-note">Note: Entering a phone number does not grant permission to send SMS. Consent must be provided via checkboxes below.</p>
                 </div>
                 
                 <div class="form-group">
-                    <label for="email">Email Address *</label>
+                    <label for="email">Email *</label>
                     <input type="email" id="email" name="email" required>
                 </div>
 
                 <div class="consent-box">
-                    <h3>SMS Program Disclosures</h3>
-                    
+                    <h3>SMS Program Information</h3>
                     <p><strong>Business Name:</strong> Auto Receptionist HL</p>
-                    
-                    <p><strong>Message Type:</strong> By subscribing, you will receive recurring automated marketing and informational text messages from Auto Receptionist HL. Message types include: service updates, appointment reminders, business tips, promotional offers, and information related to our AI automation services.</p>
-                    
-                    <p><strong>Message Frequency:</strong> Message frequency varies. You may receive up to 4 messages per month.</p>
-                    
-                    <p><strong>Message & Data Rates:</strong> Message and data rates may apply depending on your mobile carrier plan. Please consult your carrier for details about your messaging plan.</p>
-                    
-                    <p><strong>How to Opt-Out:</strong> Reply STOP to any message to unsubscribe at any time. You will receive a confirmation message upon opting out. Consent is not a condition of purchase.</p>
-                    
-                    <p><strong>Help:</strong> Reply HELP for assistance or contact us at (925) 550-7623 or dnlrbbrt@gmail.com.</p>
-                    
-                    <p><strong>Privacy & Data:</strong> Your information is secure. View our <a href="privacy.html">Privacy Policy</a> for details on how we protect and use your data.</p>
-                    
-                    <p><strong>Age Restriction:</strong> You must be 18 years of age or older to subscribe.</p>
+                    <p><strong>Message & Data Rates:</strong> Message and data rates may apply.</p>
+                    <p><strong>Help & Opt-Out:</strong> Reply HELP for help or STOP to opt out.</p>
                 </div>
 
                 <div class="form-group checkbox-group">
                     <label>
-                        <input type="checkbox" id="ageConfirm" name="ageConfirm">
-                        <span>I confirm that I am 18 years of age or older.</span>
+                        <input type="checkbox" id="transactionalConsent" name="transactionalConsent">
+                        <span>I consent to receive transactional messages from <strong>Auto Receptionist HL</strong> at the phone number provided. Message frequency may vary. Message & Data rates may apply. Reply HELP for help or STOP to opt-out.</span>
                     </label>
+                    <p class="checkbox-note">Transactional messages include: account alerts, appointment reminders, service notifications. This consent is optional.</p>
                 </div>
 
                 <div class="form-group checkbox-group">
                     <label>
-                        <input type="checkbox" id="consent" name="consent">
-                        <span>I consent to receive recurring automated marketing and informational SMS messages from Auto Receptionist HL at the phone number provided. I understand I can opt out at any time by replying STOP, and that consent is not required for purchase. I have read and agree to the <a href="privacy.html">Privacy Policy</a> and <a href="terms.html">Terms of Service</a>.</span>
+                        <input type="checkbox" id="marketingConsent" name="marketingConsent">
+                        <span>I consent to receive marketing and promotional messages from <strong>Auto Receptionist HL</strong> at the phone number provided. Message frequency may vary. Message & Data rates may apply. Reply HELP for help or STOP to opt-out.</span>
                     </label>
+                    <p class="checkbox-note">Marketing messages include: business tips, special offers, promotional content. This consent is optional and not required for service.</p>
                 </div>
 
-                <button type="submit" class="btn-primary">Subscribe to SMS Updates</button>
+                <button type="submit" class="btn-primary">Submit</button>
+                
+                <p class="form-footer"><a href="privacy.html">Privacy Policy</a> | <a href="terms.html">Terms of Service</a></p>
             </form>
 
             <div id="formSuccess" class="success-message" style="display: none;">
